@@ -19,6 +19,10 @@ namespace Cezarcode
                 Console.WriteLine("Введите предложение: ");
                 String text = Console.ReadLine();
                 char[] word = text.ToCharArray();
+                if (text == "")
+                {
+                    Console.WriteLine("Пустая строка!");
+                }
                 Console.WriteLine("Введите шаг: ");
                 key = Convert.ToInt32(Console.ReadLine());
                 text = text.ToLower();
